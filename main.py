@@ -9,7 +9,8 @@ print("Enter choice: \
       2: Subtract \
       3: Divide \
       4: Multiply \
-      5: Sin(x) approximated")
+      5: Sin(x) approximated \
+      6: Cos(x) approximated")
 choice = int(input("Enter choice: "))
 
 if choice != None :
@@ -32,7 +33,8 @@ if choice != None :
     elif choice == 5:
         x = int(input("Enter num1: "))
         print(cf.sin(x))
+    elif choice == 6:
+        x = int(input("Enter num1: "))
+        print(cf.cos(x))
     else:
         raise NotImplementedError("That function doesn't exist, poopyhead");
-else:
-    raise Exception("Can't enter nothing brozo")
